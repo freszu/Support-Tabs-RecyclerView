@@ -65,9 +65,10 @@ public class MainActivity extends AppCompatActivity {
 
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFrag(new DummyFragment(getResources().getColor(R.color.accent_material_light)), "LONGCAT IS LONG");
-        adapter.addFrag(new DummyFragment(getResources().getColor(R.color.ripple_material_light)), "Long dog is long DOG");
-        adapter.addFrag(new DummyFragment(getResources().getColor(R.color.button_material_dark)), "short mosuse is ishortMOUSE");
+        adapter.addFrag(new DummyFragment(), "LONGCAT IS LONG");
+        adapter.addFrag(new DummyFragment(), "Long dog is long DOG");
+        adapter.addFrag(new DummyFragment(), "short mosuse is ishortMOUSE");
+        adapter.addFrag(new TestFragment(), "My test fragment");
         viewPager.setAdapter(adapter);
     }
 
