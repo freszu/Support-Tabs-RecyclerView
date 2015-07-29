@@ -26,7 +26,7 @@ public class DummyFragment extends Fragment {
         recyclerView.setLayoutManager(linearLayoutManager);
         recyclerView.setHasFixedSize(true);
         List<String> list = new ArrayList<>();
-        for (int i = 0; i < 30; i++) {
+        for (int i = 0; i <5; i++) {
             list.add(i+"asdasd");
         }
         adapter = new SimpleRecycleTestAdapter(list,R.layout.rv_item);

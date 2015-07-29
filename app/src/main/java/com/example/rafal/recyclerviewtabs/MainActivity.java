@@ -18,7 +18,6 @@ public class MainActivity extends AppCompatActivity {
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         final ViewPager viewPager = (ViewPager) findViewById(R.id.tabanim_viewpager);
         setupViewPager(viewPager);
